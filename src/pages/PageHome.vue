@@ -33,6 +33,34 @@
     </div>
 
     <q-separator class="divider" size="10px" color="grey-2" />
+
+    <div class="q-pa-md q-gutter-md">
+      <q-list>
+        <q-item class="q-py-md">
+          <q-item-section avatar>
+            <q-avatar size="xl">
+              <img src="https://i.pravatar.cc/150?u=a042581f4e29026704d" />
+            </q-avatar>
+          </q-item-section>
+
+          <q-item-section>
+            <q-item-label>
+              <strong>User</strong>
+              <span class="text-grey-7"> @user_handle</span>
+            </q-item-label>
+            <q-item-label class="qweet-content"
+              >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+
+              Architecto, rem! Incidunt eos dolor adipisci natus quod assumenda
+              itaque architecto ut corporis numquam consequuntur, repellat iste
+              mollitia ipsum delectus. Quibusdam, saepe?</q-item-label
+            >
+          </q-item-section>
+
+          <q-item-section side top> 1 min ago </q-item-section>
+        </q-item>
+      </q-list>
+    </div>
   </q-page>
 </template>
 
