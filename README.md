@@ -1,6 +1,7 @@
 # Qwitter (qwitter)
 
 A Quasar Twitter clone
+following https://www.youtube.com/watch?v=la-0ulfn0_M
 
 ## Install the dependencies
 ```bash
