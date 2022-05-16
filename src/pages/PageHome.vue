@@ -37,24 +37,29 @@
     <div class="q-pa-md q-gutter-md">
       <q-list>
         <q-item class="q-py-md">
-          <q-item-section avatar>
+          <q-item-section avatar top>
             <q-avatar size="xl">
               <img src="https://i.pravatar.cc/150?u=a042581f4e29026704d" />
             </q-avatar>
           </q-item-section>
 
           <q-item-section>
-            <q-item-label>
+            <q-item-label class="text-subtitle1">
               <strong>User</strong>
               <span class="text-grey-7"> @user_handle</span>
             </q-item-label>
-            <q-item-label class="qweet-content"
-              >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-
+            <q-item-label class="qweet-content text-body1">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Architecto, rem! Incidunt eos dolor adipisci natus quod assumenda
-              itaque architecto ut corporis numquam consequuntur, repellat iste
-              mollitia ipsum delectus. Quibusdam, saepe?</q-item-label
-            >
+              itaque architecto ut corporis numquam consequuntur, repellat iste.
+              Quibusdam, saepe?
+            </q-item-label>
+            <div class="qweet-icons row justify-between q-mt-sm">
+              <q-btn flat round color="grey" icon="far fa-comment" size="sm" />
+              <q-btn flat round color="grey" icon="fas fa-retweet" size="sm" />
+              <q-btn flat round color="grey" icon="far fa-heart" size="sm" />
+              <q-btn flat round color="grey" icon="fas fa-trash" size="sm" />
+            </div>
           </q-item-section>
 
           <q-item-section side top> 1 min ago </q-item-section>
@@ -86,4 +91,10 @@ export default defineComponent({
   border-top: 1px solid
   border-bottom: 1px solid
   border-color: $grey-4
+.qweet:not(:first-child)
+  border-top: 1px solid rgba(0, 0, 0, 0.12)
+.qweet-content
+  white-space: pre-line
+.qweet-icons
+  margin-left: -5px
 </style>
